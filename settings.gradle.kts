@@ -1,6 +1,6 @@
 rootProject.name = "unethicalite-plugins"
 
-include("xhunter")
+include("xHunter")
 
 for (project in rootProject.children) {
     project.apply {
