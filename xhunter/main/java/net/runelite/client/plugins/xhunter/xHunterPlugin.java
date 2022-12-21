@@ -52,7 +52,7 @@ import java.util.Random;
 @Slf4j
 @PluginDescriptor(
 	name = "xHunter",
-	description = "Makes life easier",
+	description = "A hunter plugin Use only in the woodlands",
 	tags = {"skilling", "timers"}
 )
 public class xHunterPlugin extends Plugin
