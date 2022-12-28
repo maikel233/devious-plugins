@@ -185,6 +185,9 @@ public class xHunterPlugin extends Plugin
 				case Dropping:
 					status = "Dropping";
 					//drop inventory Bones, KebbitFur
+					if (!Tabs.isOpen(Tab.INVENTORY)) {
+						Tabs.open(Tab.INVENTORY);
+					}
 					Inventory.getAll(526, config.Falconids().getFur())
 							.stream()
 							.forEach(Item::drop);
