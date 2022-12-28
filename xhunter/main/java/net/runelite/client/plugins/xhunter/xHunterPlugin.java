@@ -229,13 +229,18 @@ public class xHunterPlugin extends Plugin
 			return;
 		}
 
-		Item weapon = equipment.getItem(EquipmentInventorySlot.WEAPON.getSlotIdx());
-		if (weapon.getName().equals("Falconer's glove") && weapon.getId() == 10023){
+		//Item weapon = equipment.getItem(EquipmentInventorySlot.WEAPON.getSlotIdx());
+		//if (weapon.getName().equals("Falconer's glove") && weapon.getId() == 10023){
 			currentTask = TASK.Catching;
-		}
+		//}
 	}
 
 	public void Catching() {
+	
+		NPC FalconNpc = NPCs.getNearest(config.Falconids().getFalcon());
+		if (FalconNpc != null)
+			return;
+			
 			if (currentTask == TASK.Catching) {
 				NPC KebbitNpc = NPCs.getNearest(config.Falconids().getId());
 				if (KebbitNpc != null) {
