@@ -49,11 +49,6 @@ import net.unethicalite.api.movement.Movement;
 import net.unethicalite.api.plugins.Task;
 import net.unethicalite.api.plugins.TaskPlugin;
 
-//TODO Begint al bij de blood altar te craften? Dit mag pas als we de Dark essence gecraft is. Na de action Bind
-//TODO Walking moet aangepast worden Walker vervangen met Tile.walkhere. zodat er zo weinig mogelijk geklikt wordt.
-
-
-
 
 @Slf4j
 @PluginDescriptor(
